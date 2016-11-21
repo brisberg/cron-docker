@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM mongo:3.0
 MAINTAINER Brandon Risberg
 
 # Add crontab file in the cron directory
@@ -20,4 +20,4 @@ RUN apt-get -y install cron
 
 
 # Run the command on container startup
-CMD cron && tail -f /var/log/cron.log
+CMD cron && mongod
