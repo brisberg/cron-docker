@@ -27,7 +27,7 @@ tar -C /var/backups/ -zcvf /var/backups/$ARCHIVE_NAME $FILE_NAME/
 # Remove the backup directory
 rm -r /var/backups/$FILE_NAME
 
-echo -n "Uploading to Google Cloud Storage..."
+echo "Uploading to Google Cloud Storage..."
 gsutil cp /var/backups/$ARCHIVE_NAME gs://$BUCKET_NAME
 rm /var/backups/$ARCHIVE_NAME
 echo "Done"
