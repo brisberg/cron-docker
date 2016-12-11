@@ -1,5 +1,5 @@
 #!/bin/bash
-PATH=/google-cloud-sdk/bin:$PATH
+PATH=/gsutil:$PATH
 HOME="/"
 BOTO_CONFIG="/.config/gcloud/legacy_credentials/brandon.risberg@gmail.com/.boto"
 
