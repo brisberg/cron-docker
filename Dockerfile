@@ -20,9 +20,9 @@ RUN \
   tar xfz gsutil.tar.gz -C $HOME && \
   rm gsutil.tar.gz
 ENV PATH $PATH:$HOME/gsutil
+ENV BOTO_PATH /etc/gsutil/auth/.boto
 
-RUN mkdir /.ssh
-VOLUME ["/.config"]
+VOLUME ["/etc/gsutil/auth"]
 
 # Add crontab file in the cron directory
 ADD crontab /etc/cron.d/hello-cron

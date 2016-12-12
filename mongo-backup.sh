@@ -1,7 +1,6 @@
 #!/bin/bash
 PATH=/gsutil:$PATH
 HOME="/"
-BOTO_CONFIG="/.config/gcloud/legacy_credentials/brandon.risberg@gmail.com/.boto"
 
 : "${GS_PROJECT_ID:?Need to set GS_PROJECT_ID}"
 : "${APP_NAME:?Need to set APP_NAME}"
